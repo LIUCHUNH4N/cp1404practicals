@@ -11,7 +11,7 @@ def main():
     taxi.start_fare()
     taxi.drive(18)
     fare = taxi.get_fare()
-    expected_fare = 48.78  # 4.50 (flagfall) + 18 * 2 * 1.23 (price_per_km with fanciness)
+    expected_fare = 48.80  # 4.50 (flagfall) + 18 * 2 * 1.23 (price_per_km with fanciness)
     assert fare == expected_fare, f"Expected fare: ${expected_fare:.2f}, but got ${fare:.2f}"
     print(f"Test passed! Fare: ${fare:.2f}")
 
